@@ -12,10 +12,7 @@
                 <th>Name</th>
                 <th>Price</th>
                 <th>Description</th>
-                <th>ImageName</th>
-                <th>ImageSize</th>
-                <th>UpdatedAt</th>
-                <th>actions</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -23,11 +20,8 @@
             <tr>
                 <td>{{ product.id }}</td>
                 <td>{{ product.name }}</td>
-                <td>{{ product.price }}</td>
+                <td>{{ product.price }} €</td>
                 <td>{{ product.description }}</td>
-                <td>{{ product.imageName }}</td>
-                <td>{{ product.imageSize }}</td>
-                <td>{{ product.updatedAt ? product.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
                 <td>
                     <a class="btn btn-light" href="{{ path('app_product_show', {'id': product.id}) }}">show</a>
                     <a class="btn btn-warning" href="{{ path('app_product_edit', {'id': product.id}) }}">edit</a>
@@ -35,7 +29,7 @@
             </tr>
         {% else %}
             <tr>
-                <td colspan="8">no records found</td>
+                <td colspan="5">no records found</td>
             </tr>
         {% endfor %}
         </tbody>
