@@ -13,7 +13,14 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/product')]
 class ProductController extends AbstractController
 {
-    #[Route('/', name: 'app_product_index', methods: ['GET'])]
+    #[Route(
+        '/',
+        name: 'app_product_index',
+        methods: ['GET'],
+        requirements: [
+            '_locale' => 'en|fr',
+        ]
+    )]
     public function index(ProductRepository $productRepository): Response
     {
         return $this->render('product/index.html.twig', [

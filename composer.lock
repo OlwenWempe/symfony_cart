@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "241c693b54e6af796d8de62c05a35be3",
+    "content-hash": "c7ed70b5b269ab1cebac2f0080f63288",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -4298,6 +4298,75 @@
                 }
             ],
             "time": "2022-10-23T10:33:07+00:00"
+        },
+        {
+            "name": "symfony/loco-translation-provider",
+            "version": "v6.0.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/loco-translation-provider.git",
+                "reference": "92b018badbb081ba5acbd44614652c65c2bbc24d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/loco-translation-provider/zipball/92b018badbb081ba5acbd44614652c65c2bbc24d",
+                "reference": "92b018badbb081ba5acbd44614652c65c2bbc24d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.2",
+                "symfony/config": "^5.4|^6.0",
+                "symfony/http-client": "^5.4|^6.0",
+                "symfony/translation": "^5.4|^6.0"
+            },
+            "type": "symfony-translation-bridge",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Translation\\Bridge\\Loco\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mathieu Santostefano",
+                    "homepage": "https://github.com/welcomattic"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Loco Translation Provider Bridge",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "loco",
+                "provider",
+                "translation"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/loco-translation-provider/tree/v6.0.12"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-08-12T13:08:57+00:00"
         },
         {
             "name": "symfony/mailer",
